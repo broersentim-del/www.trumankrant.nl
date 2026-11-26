@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truman Krant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="hero">
+      <h1>TRUMAN</h1>
+    </main>
+
+    <section class="poll" aria-labelledby="poll-question">
+      <div class="poll-card">
+        <p class="poll-label">Peiling</p>
+        <h2 id="poll-question">wat vinden julliie van dit onderwerp?</h2>
+
+        <form id="poll-form">
+          <fieldset>
+            <legend class="sr-only">Kies een antwoord</legend>
+
+            <label class="option">
+              <input type="radio" name="answer" value="leuk" />
+              <span>Leuk</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="answer" value="stom" />
+              <span>Stom</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="answer" value="saai" />
+              <span>Saai</span>
+            </label>
+          </fieldset>
+
+          <button type="submit">Stem</button>
+        </form>
+
+        <div id="poll-results" class="results" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <article class="story" aria-labelledby="story-heading">
+      <p class="story-label">The Truman Show</p>
+      <h2 id="story-heading">Het leven van Truman Burbank blijkt een doorlopende tv-show</h2>
+      <p>
+        Truman Burbank woont in het ogenschijnlijk perfecte Seaheaven. Sinds zijn
+        geboorte wordt zijn leven echter heimelijk voor de camera's opgenomen
+        voor The Truman Show. Terwijl vreemde gebeurtenissen hem laten twijfelen
+        aan de wereld om hem heen, begint hij te zoeken naar de waarheid achter
+        zijn volmaakte leven.
+      </p>
+    </article>
+
+    <script src="poll.js"></script>
+  </body>
+</html>
